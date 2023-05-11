@@ -1,0 +1,55 @@
+.project_data {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 1.5rem;
+    margin-bottom: var(--mb-1-5);
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
+
+}
+
+.project_img {
+    height: 350px;
+}
+.image_project {
+    height: 100%;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+.project_content {
+    padding: 2rem 2rem 1rem 0;
+    position: relative;
+}
+.project_title {
+    font-size: var(--h3--font-size);
+}
+.project_heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-1-5);
+}
+.project_links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: 20px;
+  
+}
+.project_links svg, .project_links img {
+    color: var(--title-color);
+    font-weight: 700;
+}
+.project_description  {
+    font-size: var(--normal-font-size);
+}
+.project_techniques {
+    position: absolute;
+    bottom: 20px;
+}
+.project_techniques .technique_icon {
+    font-size: 2.25rem;
+    margin-right: 8px;
+}
