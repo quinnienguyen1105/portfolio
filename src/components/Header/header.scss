@@ -38,7 +38,16 @@
 .active_link, .nav_link:hover {
     color: var(--title-color-dark);
 }
-
+.toggle_mode i{
+  color: var(--title-color);
+  cursor: pointer;
+}
+.toggle_mode:hover i{
+  color: var(--title-color-dark);
+}
+.toggle_mode .nav_link {
+  display: none;
+}
 /*============================Reponsive==================*/
 /*For medium devices*/
 @media screen and (max-width: 768px) {
@@ -92,6 +101,25 @@
   .nav_toggle {
     display: block;
   }
+  .toggle_mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle_mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle_mode i {
+    font-size: 1.2rem;
+    font-weight: var(--font-medium);
+    padding-bottom: 5px;
+  }
+  .toggle_mode .nav_link {
+    display: block;
+  }
 }
 /*For small devices*/
 @media screen and (max-width: 350px) {
@@ -101,4 +129,5 @@
   .nav_list {
     column-gap: 0;
   }
+
 }

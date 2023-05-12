@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./header.scss"
 const Header = () => {
     //toggle menu
     const [Toggle, showMenu] = useState(false);
+    //day-night mode 
+    const [mode, setMode] = useState('day');
 
+    const toogleMode = () => {
+        if(mode=== 'day') {
+            setMode('night');
+        }
+        else {
+            setMode('day');
+        }
+    }
+    useEffect(()=> {
+        document.documentElement.className= mode;
+    }, [mode])
   return (
     <header className='header'> 
         <nav className='nav container'>
@@ -24,6 +37,19 @@ const Header = () => {
                     </li>
                     <li className='nav_item'>
                         <a href='#contact' className='nav_link'><i className='uil uil-message nav_icon'></i> Contact</a>
+                    </li>
+                    <li className='nav_item toggle_mode'>
+                        {mode === 'day' ? (
+                            <>
+                            <i className='bx bx-moon' onClick={toogleMode}></i>
+                            <a href='#' className='nav_link'>Night Mode</a>
+                            </>
+                        ) : (
+                            <>
+                            <i className='bx bx-sun' onClick={toogleMode}></i>
+                            <a href='#' className='nav_link'>Day Mode</a>
+                            </>
+                        )}
                     </li>
                 </ul>
 
