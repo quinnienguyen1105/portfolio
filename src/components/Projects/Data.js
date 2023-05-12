@@ -64,7 +64,7 @@ export const Data = [
         gitLink: "#",
         liveLink: "#",
         techniques: [
-            <img src={d3} alt="" style={{ filter: 'saturate(0)', width: '29px', height: '28px' }}/>,
+            <img src={d3} alt="" style={{ filter: 'saturate(0)', width: '29px', height: '28px' }} className="img_icon"/>,
             <i class='bx bxl-html5' ></i>,
             <i class='bx bxl-css3' ></i>,
             <i class='bx bxl-javascript' ></i>,

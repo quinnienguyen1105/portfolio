@@ -6,7 +6,6 @@
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
-
 }
 
 .project_img {
@@ -40,7 +39,6 @@
 }
 .project_links svg, .project_links img {
     color: var(--title-color);
-    font-weight: 700;
 }
 .project_description  {
     font-size: var(--normal-font-size);
@@ -53,3 +51,122 @@
     font-size: 2.25rem;
     margin-right: 8px;
 }
+/*============================Reponsive==================*/
+/*For large devices*/
+@media screen and (max-width: 992px) {
+
+  }
+  /*For medium devices*/
+  @media screen and (max-width: 768px) {
+    .project_links {
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: 5px;
+    }
+    .project_techniques {
+        position: absolute;
+        bottom: 0;
+    }
+    .project_techniques .technique_icon {
+        font-size: 2rem;
+        margin-right: 8px;
+    }
+    .project_techniques .technique_icon .img_icon{
+        width: 23px !important;
+        height: 25px !important;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .project_data {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin-bottom: var(--mb-1-5);
+    }
+    .project_img {
+        height: 200px;
+    }
+    .image_project {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+        border-bottom-left-radius: 0;
+    }
+    .project_content {
+        padding: 0 1rem 4rem 1rem;
+        position: relative;
+    }
+    .project_title {
+        font-size: var(--normal--font-size);
+    }
+    .project_heading {
+        margin-bottom: var(--mb-0-5);
+    }
+    .project_links {
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .project_techniques {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+    }
+    .project_techniques .technique_icon {
+        font-size: 2rem;
+        margin-right: 8px;
+    }
+    .project_techniques .technique_icon .img_icon{
+        width: 23px !important;
+        height: 25px !important;
+    }
+    
+  }
+  /*For small devices*/
+  @media screen and (max-width: 350px) {
+    // .project_data {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     row-gap: 1rem;
+    //     margin-bottom: var(--mb-1-5);
+    // }
+    // .project_img {
+    //     height: 200px;
+    // }
+    // .image_project {
+    //     height: 100%;
+    //     border-top-left-radius: 1.25rem;
+    //     border-top-right-radius: 1.25rem;
+    //     border-bottom-left-radius: 0;
+    // }
+    // .project_content {
+    //     padding: 0 1rem 4rem 1rem;
+    //     position: relative;
+    // }
+    // .project_title {
+    //     font-size: var(--normal--font-size);
+    // }
+    // .project_heading {
+    //     margin-bottom: var(--mb-0-5);
+    // }
+    // .project_links {
+    //     font-size: 1.2rem;
+    //     margin-left: auto;
+    //     margin-right: 0;
+    // }
+    // .project_techniques {
+    //     position: absolute;
+    //     bottom: 5px;
+    //     left: 20px;
+    // }
+    // .project_techniques .technique_icon {
+    //     font-size: 2rem;
+    //     margin-right: 8px;
+    // }
+    // .project_techniques .technique_icon .img_icon{
+    //     width: 23px !important;
+    //     height: 25px !important;
+    // }
+  }

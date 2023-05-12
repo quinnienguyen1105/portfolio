@@ -1,0 +1,10 @@
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--mb-2);
+    border-top: 2px solid var(--text-color);
+}
+.footer_nane {
+    margin-left: var(--mb-0-25);
+}
