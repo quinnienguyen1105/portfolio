@@ -158,6 +158,10 @@
         width: 23px !important;
         height: 25px !important;
     }
+    .modal_image {
+        width: 100%;
+        margin-bottom: var(--mb-0-5);
+    }
     .close {
         position: absolute;
         top: -3.5rem;
