@@ -8,15 +8,15 @@ const About = () => {
         <h2 className='section_title'>
             About me
         </h2>
-        <span className='section_subtitle'>My introduction</span>
+        <span className='section_subtitle'>A brief introduction</span>
         <div className='about_container container grid'>
             <img className='about_img' src={AboutImg} alt='' />
             <div className='about_data'>
                 <p className='about_description'>
-                    As a passionate front-end developer, I love to blend creativity and technical skills to develop stunning web interfaces. <br/>
-                    With a Bachelor's degree in Computer Science from Ho Chi Minh Open University and valuable experience as both a PHP Developer and Front-end Developer, I have immersed myself in the world of web development. <br/>
-                    This journey led me to pursue further education at Fanshawe College, where I recently graduated with the Dean's Honour Roll. <br/>
-                    Now, I am eager to secure a front-end position where I can continue to learn, grow, and make meaningful contributions to the field of web development.<br/>
+                    <p>As a passionate front-end developer, I love to blend creativity and technical skills to develop stunning web interfaces.</p>
+                    <p>With a Bachelor's degree in Computer Science from Ho Chi Minh Open University and valuable experience as both a PHP Developer and Front-end Developer, I have immersed myself in the world of web development. </p>
+                    <p>This journey led me to pursue further education at Fanshawe College, where I recently graduated with the Dean's Honour Roll.</p>
+                    <p>Now, I am eager to secure a front-end position where I can continue to learn, grow, and make meaningful contributions to the field of web development.</p>
                 </p>
                 <a download="" href={CV} className='button button-flex'>Resume
                     <svg

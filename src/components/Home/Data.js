@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Typingdata from './Typingdata'
 const Data = () => {
   return (
     <div className='home_data'>
@@ -55,7 +55,8 @@ const Data = () => {
                 </svg>
         </h1>
         <h3 className='home_subtitle'> Website Developer</h3>
-        <p className='home_description'> I have a strong passion on Website Development and dedicated to my work.</p>
+        {/* <p className='home_description'> I have a strong passion on Website Development and dedicated to my work.</p> */}
+        <Typingdata/>
         <a href='#contact' className='button button-flex'>Say Hello
             <svg
                 class="button__icon"
