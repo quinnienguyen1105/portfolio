@@ -17,7 +17,6 @@ const Typingdata = () => {
       sequence={CONTENT}
       wrapper='p'
       repeat={Infinity}
-      className='home_description'
     />
   )
 }
