@@ -123,6 +123,13 @@ const Qualification = () => {
                 </div>
             </div>
         </div>
+
+        <div class="circle-group">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+        
     </section>
   )
 }

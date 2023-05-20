@@ -1,3 +1,6 @@
+.qualification {
+    position: relative;
+}
 .qualification_container {
     max-width: 768px;
 }
@@ -69,6 +72,67 @@
     background-color: var(--text-color);
     transform: translate(6px, -7px);
 }
+.qualification .circle-group {
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.qualification .circle-group .circle-1 {
+    position:absolute;
+    top:150px;
+    margin-left:-180px;
+    width:500px;
+    height:500px;
+    border:2px solid var(--title-color-dark);
+    border-radius:98%;
+    -webkit-transform-origin:40% 50% 0;
+    transform-origin:40% 50% 0;
+    animation:spin 15s linear 0s infinite reverse;
+    z-index: -1;
+}
+.qualification .circle-group .circle-2 {
+    top: 340px;
+    margin-right: 130px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--title-color-dark);
+    transform-origin: 30% 40% 0;
+}
+.qualification .circle-group .circle-3 {
+    top: 300px;
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+    border: 2px solid var(--title-color-dark);
+    -webkit-transform-origin: 65% 60% 0;
+    transform-origin: 65% 60% 0;
+}
+.circle-2, .circle-3 {
+    position: absolute;
+    border: 1px solid var(--title-color-dark);
+    border-radius: 98%;
+    -webkit-animation: spin 15s linear 0s infinite;
+    animation: spin 15s linear 0s infinite;
+    z-index: -1;
+}
+.day .circle-group .circle-1, 
+.day .circle-group .circle-2,
+.day .circle-group .circle-3 {
+    border: 1px solid var(--text-color);
+}
+@keyframes spin {
+    0% {
+     -webkit-transform:rotate(0deg);
+     transform:rotate(0deg)
+    }
+    to {
+     -webkit-transform:rotate(1turn);
+     transform:rotate(1turn)
+    }
+}
 /*============================Reponsive==================*/
 /*For large devices*/
 @media screen and (max-width: 992px) {
@@ -76,6 +140,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .qualification .circle-group {
+        left: -30%;
+        -webkit-transform: scale(.75);
+        transform: scale(.75);
+        z-index: -1;
+      }
   }
   /*For medium devices*/
   @media screen and (max-width: 768px) {
@@ -92,6 +162,12 @@
     .qualification_button {
         margin: 0 var(--mb-0-75);
     }
+    .qualification .circle-group {
+        left: -55%;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        z-index: -1;
+      }
   }
   /*For small devices*/
   @media screen and (max-width: 350px) {

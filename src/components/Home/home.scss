@@ -48,6 +48,8 @@
     max-width: 400px;
     margin-bottom: var(--mb-3);
     height: 75px;
+    font-family: var(--special-font);
+    font-weight: var(--font-medium);
 }
 // .home_img {
 //     background: url(../../assets/profile_background.png);
@@ -109,7 +111,7 @@
   }
   .home_img .shape{
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     right: -50px;
     top: 20px;
     height: 120px;
@@ -117,7 +119,7 @@
   }
   .home_img .shape2{
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     left: -40px;
     bottom: 55px;
     height: 40px;

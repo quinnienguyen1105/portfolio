@@ -1,3 +1,6 @@
+.projects {
+    background-color: var(--body-color);
+}
 .project_data {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -90,6 +93,9 @@
 /*============================Reponsive==================*/
 /*For large devices*/
 @media screen and (max-width: 992px) {
+    .project_img {
+        height: 300px;
+    }
 
   }
   /*For medium devices*/
