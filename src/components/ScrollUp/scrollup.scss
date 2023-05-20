@@ -16,3 +16,14 @@
 .scrollup:hover {
     background-color: var(--title-color-dark);
 }
+@media screen and (max-width: 576px) {
+    .scrollup{
+        bottom: 5rem;
+        right: 1rem;
+    }
+  
+}
+/*For small devices*/
+@media screen and (max-width: 350px) {
+  
+}

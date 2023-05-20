@@ -94,7 +94,7 @@ const Qualification = () => {
                             <h3 className='qualification_title'>TPS Software Corporation</h3>
                             <span className='qualification_subtitle'>Frontend Developer</span>
                             <div className='qualification_calendar'>
-                                <i className='uil uil-calendar-alt'>2019- 2020</i>
+                                <i className='uil uil-calendar-alt'>2019</i>
                             </div>
                         </div>
 
