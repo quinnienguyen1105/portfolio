@@ -10,7 +10,37 @@ const About = () => {
         </h2>
         <span className='section_subtitle'>A brief introduction</span>
         <div className='about_container container grid'>
-            <img className='about_img' src={AboutImg} alt='' />
+            {/* <img className='about_img' src={AboutImg} alt='' /> */}
+            <div className="code-screen">
+                <div className='screen'>
+                    <div className='screen_buttons'>
+                        <div className=' btn btn_red'></div>
+                        <div className='btn btn_yellow'></div>
+                        <div className='btn btn_green'></div>
+                    </div>
+                </div>
+                <div className='code_data'>
+                
+                    <p>
+                    <span className='keyword1'>const</span><span className='green'> aboutMe</span> = () <span className="arrow-function">=&gt;</span> {'{'}
+                    <br />
+                    &nbsp;&nbsp;<span className='keyword2'>return</span> {'{'} <br/>
+                    &nbsp;&nbsp;&nbsp;<span className="property">name:</span> <span className="string">'Duong Phuong Quyen Nguyen',</span>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;<span className="property">email:</span> <span className="string">'quinnienguyen1105@gmail.com',</span>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;<span className="property">website:</span> <span className="string">'https://quinnienguyen.com'</span>
+                    <br />
+                    &nbsp;&nbsp;{'};'}
+                    <br/>
+                    {'};'}
+                    <br />
+                    </p>
+                
+                </div>
+            </div>
+
+
             <div className='about_data'>
                 <p className='about_description'>
                     <p>As a passionate front-end developer, I love to blend creativity and technical skills to develop stunning web interfaces.</p>

@@ -5,7 +5,7 @@ const Header = () => {
     const [Toggle, showMenu] = useState(false);
     //day-night mode 
     const [mode, setMode] = useState('day');
-
+    const [scrollClass, setScrollClass] = useState('');
     const toogleMode = () => {
         if(mode=== 'day') {
             setMode('night');
@@ -17,8 +17,27 @@ const Header = () => {
     useEffect(()=> {
         document.documentElement.className= mode;
     }, [mode])
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          if (scrollPosition > 0) {
+            setScrollClass('scrolled');
+          } else {
+            setScrollClass('');
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [scrollClass]);
+    
+
   return (
-    <header className='header'> 
+    <header className={`header ${scrollClass}`}> 
         <nav className='nav container'>
             <a href='index.html' className='nav_logo'>Quinnie.dev</a>
             <div className={Toggle ? "nav_menu show_menu" : "nav_menu"}>

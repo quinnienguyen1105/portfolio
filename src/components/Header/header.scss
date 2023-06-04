@@ -6,6 +6,11 @@
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
+.scrolled {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
 .nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;
@@ -16,7 +21,6 @@
 .nav_logo, .nav_toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
-    
 }
 .nav_list {
     display: flex;
@@ -55,6 +59,9 @@
   .header {
     top: initial;
     bottom: 0;
+  }
+  .scrolled {
+    box-shadow: 0 3px 5px rgb(57, 63, 72);
   }
   .nav {
     height: calc(--header-height);

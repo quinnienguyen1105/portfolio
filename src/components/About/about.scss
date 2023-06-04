@@ -1,6 +1,6 @@
 .about_container {
     grid-template-columns: 40% 60%;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 4rem;
 }
 .about_img{
@@ -12,12 +12,75 @@
     padding: 0 3rem 0 0;
     margin-bottom: var(--mb-2-5);
 }
+.code-screen {
+    background-color: var(--container-color);
+    color: #f8f8f2;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    justify-self: center;
+  }
+  .day .code-screen {
+    background-color: #272822 ;
+  }
+  .screen {
+    border-bottom: 1px solid #f8f8f2;
+  }
+  .screen .screen_buttons .btn {
+    width: .75rem;
+    height: .75rem;
+    margin-left: .5rem;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  .btn.btn_red {
+    background-color: red;
+  }
+  .btn.btn_yellow {
+    background-color: yellow;
+  }
+  .btn.btn_green {
+    background-color: #00a67d;
+  }
+  .code_data {
+    padding: 20px;
+    color: #f8f8f2;
+    border-radius: 5px;
+  }
+  .code_data p{
+    font-family: var(--code-font) !important;
+    font-size: var(--small-font-size);
+    display: block;
+    max-width: fit-content;
+    white-space: nowrap;
+  }
+
+  .keyword1 {
+    color: #2e95d3;;
+  }
+  .keyword2 {
+    color: #f92672;
+  }
+  .green {
+    color: #00a67d
+  }
+  .arrow-function {
+    color: #66d9ef;
+  }
+  
+  .property {
+    color: #f8f8f2;
+  }
+  
+  .string {
+    color: #e6db74;
+  }
 /*============================Reponsive==================*/
 /*For large devices*/
 @media screen and (max-width: 992px) {
     .about_container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        align-items: center;
     }
     .about_img {
         width: 220px;
@@ -33,8 +96,14 @@
   /*For medium devices*/
 
   @media screen and (max-width: 576px) {
+    .about_container {
+      align-items: center;
+    }
     .about_description {
         padding: 0;
+    }
+    .code-screen {
+      padding: 0;
     }
   }
   /*For small devices*/
