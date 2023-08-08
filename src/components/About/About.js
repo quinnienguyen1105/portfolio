@@ -25,7 +25,7 @@ const About = () => {
                     <span className='keyword1'>const</span><span className='green'> aboutMe</span> = () <span className="arrow-function">=&gt;</span> {'{'}
                     <br />
                     &nbsp;&nbsp;<span className='keyword2'>return</span> {'{'} <br/>
-                    &nbsp;&nbsp;&nbsp;<span className="property">name:</span> <span className="string">'Duong Phuong Quyen Nguyen',</span>
+                    &nbsp;&nbsp;&nbsp;<span className="property">name:</span> <span className="string">'Quinnie Nguyen',</span>
                     <br />
                     &nbsp;&nbsp;&nbsp;<span className="property">email:</span> <span className="string">'quinnienguyen1105@gmail.com',</span>
                     <br />
