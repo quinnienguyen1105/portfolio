@@ -4,6 +4,7 @@ import Mastery from "../../assets/mastery.jpg";
 import carject_report from "../../assets/carjet_cus_report.jpg";
 import carjet_lib from "../../assets/carjet_lib.jpg";
 import quinnie_cosmetic from "../../assets/quinnie_cosmetic.jpg";
+import bme from "../../assets/bme2.png";
 import d3 from "../../assets/d3-2.svg";
 export const Data = [
     {
@@ -84,6 +85,19 @@ export const Data = [
         liveLink: "",
         techniques: [
             <i class='bx bxl-wordpress'></i>,
+            <i class='bx bxl-html5' ></i>,
+            <i class='bx bxl-css3' ></i>,
+        ]
+    },
+    {
+        id: 7,
+        image: bme,
+        title: "Banh Mi Express",
+        description: "Banh Mi Express, a website developed in Wix Studio for a local restaurant. This project features a seamless user experience, offering essential pages such as the homepage, the restaurant's story, convenient online ordering, blogs, and contact information.", 
+        gitLink: "#",
+        liveLink: "https://www.bestwebsever.com/",
+        techniques: [
+            <i class='bx bxl-wix'></i>,
             <i class='bx bxl-html5' ></i>,
             <i class='bx bxl-css3' ></i>,
         ]
